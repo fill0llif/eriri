@@ -49,9 +49,9 @@ shared class SkippingBytesPlayingStrategy(
 		Integer lastStopped) {
 		assert (exists trackInputStream = this.trackInputStream);
 		/*
-		 WONTFIX even though the stream is skipping the exact byte read
+		 WONTFIX even though the stream is skipping the exact bytes read
 		 the audio played is still too delayed
-		 this probably cannot be resolved easily because depends on the
+		 this probably cannot be solved easily because depends on the
 		 track codec used
 		 */
 		toSkip = trackInputStream.count;

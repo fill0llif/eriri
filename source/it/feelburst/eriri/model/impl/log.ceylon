@@ -1,11 +1,7 @@
 import ceylon.logging {
 	Logger,
-	logger,
-	info
+	logger
 }
 
-shared Logger log {
-	value log = logger(`package it.feelburst.eriri.model.impl`);
-	log.priority = info;
-	return log;
-}
+Logger log =>
+	logger(`package it.feelburst.eriri.model.impl`);
